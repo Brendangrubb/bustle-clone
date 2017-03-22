@@ -17,6 +17,20 @@ background-color: white;
   padding: 5px;
 }
 
+.article-center {
+  text-align: center;
+}
+
+.article-photo {
+  width: 700px;
+  height: 450px;
+}
+
+.article-title {
+  background-color: #51E3BF;
+  padding: 5px;
+}
+
 .index-img {
   width: 450px;
   height: 250px;

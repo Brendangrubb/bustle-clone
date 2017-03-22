@@ -1,14 +1,12 @@
 
-
-
 <ul>
   {{#each model as |article|}}
     <div class="row article">
       <div class="col-md-6 index-img-div">
-        <img class="index-img" src="{{article.photo}}" alt="{{article.title}}">
+        {{#link-to 'article' article.id}}<img class="index-img" src="{{article.photo}}" alt="{{article.title}}">{{/link-to}}
       </div>
       <div class="col-md-5 title-teaser-author-div">
-        <p class="title">{{article.title}}</p>
+        {{#link-to 'article' article.id}}<p class="title">{{article.title}}</p>{{/link-to}}
         <p class="teaser">{{article.teaser}}</p>
         <p>by <span class="author">{{article.author}}</span></p>
       </div>
@@ -16,3 +14,5 @@
     <br>
   {{/each}}
 </ul>
+
+{{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}}
