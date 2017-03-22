@@ -1,0 +1,18 @@
+
+
+
+<ul>
+  {{#each model as |article|}}
+    <div class="row article">
+      <div class="col-md-6 index-img-div">
+        <img class="index-img" src="{{article.photo}}" alt="{{article.title}}">
+      </div>
+      <div class="col-md-5 title-teaser-author-div">
+        <p class="title">{{article.title}}</p>
+        <p class="teaser">{{article.teaser}}</p>
+        <p>by <span class="author">{{article.author}}</span></p>
+      </div>
+    </div>
+    <br>
+  {{/each}}
+</ul>

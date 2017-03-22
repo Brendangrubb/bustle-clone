@@ -1,5 +1,22 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<head>
 
-{{outlet}}
+</head>
+
+<header>
+  <ul id="links">
+    <li>{{#link-to 'admin'}}admin{{/link-to}}</li>
+    <li>{{#link-to 'index'}}home{{/link-to}}</li>
+  </ul>
+  <p id="socials-and-search">socials and search</p>
+  <div id="logo-div">
+  <img id="logo" src="logo.png" alt="logo">
+  </div>
+</header>
+
+<div class="container">
+  <body>
+
+    {{outlet}}
+
+  </body>
+</div>
